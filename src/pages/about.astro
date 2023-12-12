@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Contact | Maxence Chevée" description="A propos de Maxence Chevée">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="A propos"
+				tagline="Merci de votre visite. Lisez ci-dessous pour en savoir plus sur moi et mon parcours."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/coding.jpg"
+					alt="Bureau de développeur"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Général</h2>
+				<div class="content">
+					<p>
+						Passionné par le monde du développement web, j'ai consacré une grande partie de ma carrière à créer des expériences en ligne exceptionnelles. Mon parcours professionnel est marqué par une expertise approfondie dans la conception et la mise en œuvre de solutions web innovantes.
+Au fil des années, j'ai acquis une solide expérience dans le développement front-end et back-end, en utilisant une variété de technologies modernes. Mon engagement envers l'excellence technique et ma capacité à relever des défis complexes m'ont permis de contribuer de manière significative à des projets variés.
+					</p>
+					<p>
+						J'ai travaillé sur la création de sites web réactifs et conviviaux, en mettant l'accent sur l'optimisation des performances et la convivialité. Mon approche axée sur la résolution de problèmes m'a permis de trouver des solutions efficaces pour surmonter les obstacles rencontrés au cours de mes projets.
+En plus de mes compétences techniques, je suis également habitué à travailler en équipe et à collaborer avec des professionnels de différents domaines. Cette expérience a renforcé ma capacité à communiquer efficacement, à gérer des projets de manière stratégique et à respecter les délais.
+					</p>
+					<p>
+						Mon engagement envers le perfectionnement continu m'a conduit à rester constamment à jour avec les dernières tendances et technologies du développement web. Je suis convaincu que ma passion pour l'innovation et mon expertise technique font de moi un professionnel du développement web capable de relever les défis les plus exigeants et de contribuer de manière significative à des projets stimulants.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Formation</h2>
+				<div class="content">
+					<p>Formation Bac+2 en Développement Web/Mobile à la Wild Code School en Remote de 09-2023 à 02/2024.</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Compétences</h2>
+				<div class="content">
+					<p>Durant ma formation j'ai eu la chance de pouvoir utiliser plusieurs langages, comme vous le voyez dans mes projets certains ont été fait simplement en HTML, CSS, JS Vanilla. Mais aussi certains qui ont été fait en pure REACT et pour le projet 3 le back-end a fait son apparition grâce à l'apprentissage de MYSQL et EXPRESS.</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
