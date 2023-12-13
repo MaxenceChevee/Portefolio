@@ -1,15 +1,15 @@
 ---
 title: Zonb-Nwar
 publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
+img: /assets/book-wilder.png
 img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
 description: |
   Nous avons développé un Book de Wilders, servant a présenter notre équipe de développeurs.
 
 tags:
-  - Design
-  - Dev
-  - Branding
+  - Conception
+  - Développement
+  - Description
 ---
 
 Ce site a été le premier que nous avons créer dans cette formation, REACT n'étant pas encore acquis à ce niveau de la formation, nous l'avons réalisé en HTML CSS et JS Vanilla.
