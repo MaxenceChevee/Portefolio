@@ -4,7 +4,7 @@ publishDate: 2019-12-01 00:00:00
 img: /assets/calendrier.png
 img_alt: Capture d'écran du site
 description: |
-  Nous avons créer ce site lors d'un hackathon organisé par notre école.
+  Nous avons créer ce site lors d'un hackathon organisé par la WCS.
 tags:
   - Développement
   - Animations
